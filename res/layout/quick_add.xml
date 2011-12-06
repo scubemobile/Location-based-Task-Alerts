@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<TableLayout android:id="@+id/TableLayout01"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TextView android:layout_margin="2px" android:text="Task Name" android:id="@+id/txtname"
+			android:layout_height="wrap_content" android:layout_width="fill_parent">
+		</TextView>
+		<EditText android:layout_below="@id/txtname" android:text=""
+			android:id="@+id/task" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		</EditText>
+
+		<TextView android:layout_margin="2px" android:text="Notes" android:id="@+id/txtnotes"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_below="@id/task">
+		</TextView>
+		<EditText android:text="" android:id="@+id/note" android:gravity="top"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+		</EditText>
+		
+		<!-- android:visibility="gone"  -->
+		
+		<RelativeLayout android:layout_height="wrap_content" android:id="@+id/map_lat_lon"
+			android:layout_width="fill_parent" android:layout_below="@id/note">
+			<TextView 
+				android:layout_margin="2px" android:text="Latitude" android:id="@+id/txtlatitude"
+				android:layout_height="wrap_content" android:layout_width="120px"
+				android:visibility="gone" android:layout_below="@id/note">
+			</TextView>
+			<EditText 
+				android:text="" android:id="@+id/latitude"
+				android:layout_below="@id/txtlatitude" android:layout_width="120px"
+				android:visibility="gone" android:layout_height="wrap_content">
+			</EditText>
+			<TextView
+				android:layout_margin="2px" android:text="Longitude" android:id="@+id/txtlongitude"
+				android:layout_height="wrap_content" android:layout_width="120px"
+				android:visibility="gone" android:layout_below="@id/latitude">
+			</TextView>
+			<EditText 
+				android:text="" android:id="@+id/longitude"
+				android:layout_below="@id/txtlongitude" android:layout_width="120px"
+				android:visibility="gone" android:layout_height="wrap_content">
+			</EditText>
+			<Button android:id="@+id/map" android:text="Location"
+				android:layout_marginTop="10dp" android:layout_marginBottom="10dp" 
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_weight="1" android:layout_toRightOf="@id/txtlatitude"
+				android:textColor="#ffffff" />
+		</RelativeLayout>
+		
+		<TextView android:layout_margin="2px" android:text="Tags" android:id="@+id/txttag"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_below="@id/map_lat_lon">
+		</TextView>
+		<EditText android:text="" android:id="@+id/tag"
+			android:layout_below="@id/txttag" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		</EditText>
+		
+		<RelativeLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:layout_below="@id/tag">
+			<LinearLayout android:id="@+id/spinner_group1"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content">
+				<TextView android:layout_margin="2px" android:text="Priority" android:id="@+id/TextView05"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+				</TextView>
+				<Spinner android:id="@+id/Spinner02" android:layout_width="wrap_content"
+					android:layout_height="40px"
+					android:layout_below="@id/TextView05">
+				</Spinner>
+			</LinearLayout>
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_toRightOf="@id/spinner_group1">
+				<TextView android:layout_margin="2px" android:text="Repeats" android:id="@+id/TextView04"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/Spinner02">
+				</TextView>
+				<Spinner android:id="@+id/Spinner01" android:layout_width="wrap_content"
+					android:layout_height="40px"
+					android:layout_below="@id/TextView04">
+				</Spinner>
+			</LinearLayout>
+			<!-- 
+			<Button android:id="@+id/map"
+			android:visibility="gone"
+				android:layout_margin="5px"
+				android:text="MAP"
+				android:layout_width="200px" android:layout_height="140px"
+				android:layout_weight="1" android:layout_toRightOf="@id/spinners"
+				android:textColor="#000000" android:textSize="24dip" />
+			 -->
+		</RelativeLayout>
+
+		<LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content">
+			<TextView android:layout_margin="2px" android:text="Task Status (Mark as done) " android:id="@+id/status"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:layout_below="@id/tag">
+			</TextView>
+			<CheckBox android:id="@+id/check" android:layout_width="wrap_content"
+				android:layout_alignParentRight="true" android:layout_below="@id/note"
+				android:layout_height="wrap_content" android:text="" />
+		</LinearLayout>
+		<Button android:id="@+id/confirm" android:text="@string/confirm"
+			android:layout_alignParentBottom="true" android:layout_weight="1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	</TableLayout>
+</ScrollView>

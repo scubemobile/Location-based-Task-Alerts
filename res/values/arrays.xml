@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="listArray">
+		<item name="default">Default</item>
+		<item name="priority">Priority</item>
+		<item name="status">Status</item>
+	</string-array>
+
+	<string-array name="listValues">
+		<item name="default">Default</item>
+		<item name="prority">Priority</item>
+		<item name="status">Status</item>
+	</string-array>
+</resources>

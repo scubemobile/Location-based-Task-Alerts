@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Welcome to Location Application!</string>
+	<string name="app_name">Task At Location</string>
+	<string name="no_notes">No Tasks Yet</string>
+	<string name="menu_insert">Add Task</string>
+	<string name="menu_delete">Delete Task</string>
+	<string name="task">Task</string>
+	<string name="latitude">Latitude</string>
+	<string name="longitude">Longitude</string>
+	<string name="tags">Tags</string>
+	<string name="notes">Notes</string>
+	<string name="confirm">Confirm</string>
+	<string name="quick_add">Task Details</string>
+	<string name="set_preferences">Preferences</string>
+	<string name="go_back">Done</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<RelativeLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent">
+		<TextView android:text=" About This Application" 
+			android:id="@+id/text1" android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:textColor="#00ffff" android:textSize="25px"
+			android:layout_alignParentTop="true"></TextView>
+
+		<TextView android:id="@+id/text2" android:layout_below="@id/text1"
+			android:text="\n Knowing task as and when we travel will save lot of time.
+\n
+\nThis application acts as a spy which keeps monitoring the place
+\nyou travel and alerts nearby task information.
+\n
+\nThis Location Service will help you 
+	 \n \t To know your current location 
+	 \n \t To organize task information 
+	 \n \t To fix location using map
+	 \n \t To alert if task is found around
+\n
+\nThis Location based Intelligent Mobile Organizer initiative is developed by 
+\n SCUBE,IT Solutions Pvt Ltd ,Hyderabad
+\n"
+			android:layout_height="fill_parent" android:layout_width="wrap_content"
+			android:textColor="#ffffff" android:textSize="20px"></TextView>
+
+		<TextView android:text="http://www.scubian.com/"
+			android:layout_below="@+id/text2" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:textSize="18px"></TextView>
+	</RelativeLayout>
+</ScrollView>

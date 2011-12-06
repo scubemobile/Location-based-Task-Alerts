@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory
+                android:title="Settings">
+		        <EditTextPreference
+		                android:name="Distance in KM"
+		                android:summary="Range from current location in KMs"
+		                android:defaultValue="2"
+		                android:title="Distance range"
+		                android:key="distanceRangePref" />
+                <CheckBoxPreference
+                        android:title="Start up Instructions"
+                        android:defaultValue="true"
+                        android:summary="Show start up instructions"
+                        android:key="startUpInstructionsPref" />
+                <CheckBoxPreference
+                        android:title="Finished tasks"
+                        android:defaultValue="false"
+                        android:summary="Show finished tasks"
+                        android:key="finishedTasksPref" />
+                <ListPreference
+                        android:title="Order tasks by"
+                        android:summary="choose the prefered default ordering of tasks"
+                        android:key="orderByPref"
+                        android:defaultValue="default"
+                        android:entries="@array/listArray"
+                        android:entryValues="@array/listValues" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Service">
+	        <Preference
+	                android:title="Start Service"
+	                android:summary="Service is running"
+	                android:key="servicePref"/>
+	        <Preference
+	                android:title="Location and Security"
+	                android:summary="Enable or Disable GPS sattelites or wireless networks"
+	                android:key="gpsPref"/>
+<!-- 
+	        <PreferenceScreen
+	                android:key="SecondPrefScreen"
+	                android:title="Second PreferenceScreen"
+	                android:summary="This is a second PreferenceScreen">
+	                <EditTextPreference
+	                        android:name="An other EditText Preference"
+	                        android:summary="This is a preference in the second PreferenceScreen"
+	                        android:title="Edit text"
+	                        android:key="SecondEditTextPref" />
+	        </PreferenceScreen>
+-->
+        </PreferenceCategory>
+</PreferenceScreen>

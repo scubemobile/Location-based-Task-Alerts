@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	 android:layout_height="fill_parent" >
+	<TextView
+	android:id="@+id/text1" android:text="Help Contents"
+ android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_alignParentLeft="true" android:textColor="#00ffff"
+		android:textSize="24px" android:layout_alignParentTop="true"></TextView>
+
+<TextView android:text=
+"\n
+Requirements:
+\n \t 1.Enable GPS service
+\n \t 2.Enable your Internet service 
+\n
+Background Service:
+\n
+Location Service start on power on of your mobile device
+\n to force stop, use preference screen.
+\n
+\n Service tracks current location in background 
+\n and checks if any task is found in and around the current location
+
+Working With Menu:
+\n \t 1.Press Menu when in first screen to >Add Task> 
+\n \t 2.Navigate to About option to know information about this app
+\n \t 3.Help option describes in detail the working procedure
+\n \t 4.Preference screen will help change the settings
+\n
+Task List in main activity:
+\n \t 1.All task will be shown as list view in first screen
+\n \t 2.Click on corresponding task to edit 
+\n 
+Button:
+\n \t Quick task screen will show confirm button on pressing will add task to main list
+\n \t Map button will navigates to map view on screen 
+\n \t Drag and select location of interest and press back button to continue with task edit
+Preferences:
+\n \t 1.Enable or disable GPS through this shortcut
+\n \t 2.Stop/Stop Location service 
+\n
+(GPS consumes battery power it is advisable to stop service when not in use,
+\nhowever you will be able to add,edit task even when service is stopped)
+\n
+\n\t 3.Configure location to be informed around you in Kilometer(Km)
+\n \t 4.If you need start up instruction to get disabled click on option disable
+\n \t 5. Sort the main task list based on priority"	
+		android:id="@+id/text" android:layout_height="fill_parent" android:layout_width="fill_parent"
+		android:layout_alignParentLeft="true" android:textColor="#ffffff"
+		android:textSize="20px" android:layout_alignParentTop="true"></TextView>
+		</RelativeLayout>
+		</ScrollView>
+		
